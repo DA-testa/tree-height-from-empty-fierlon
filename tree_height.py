@@ -31,8 +31,8 @@ def main():
     elif "F" in text:
         file_name=input()
         file_path='./test/'
-        file_full_name = path+name
-        if "a" not in name:
+        file_full_name = file_path+file_name
+        if "a" not in file_name:
             try:
                 with open(file_full_name) as file:
                     n=int(file.readline())
